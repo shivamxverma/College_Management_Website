@@ -5,6 +5,9 @@ import Home from './components/Home';
 import AdminRegister from './components/Adminregister';
 import StudentSignIn from './components/Studentsignin';
 import TeacherSignIn from './components/Teachersignin';
+import Announcement from './pages/Admin/Announcement';
+import Assignment from './pages/Admin/Assignment';
+
 function App() {
   return (
     <Router>
@@ -15,6 +18,7 @@ function App() {
           <Route path="/admin-signIn" element={<AdminRegister />} />
           <Route path="/student-signIn" element={<StudentSignIn />} />
           <Route path="/teacher-signIn" element={<TeacherSignIn />} />
+          <Route path="/"
           
         </Routes>
       </div>
