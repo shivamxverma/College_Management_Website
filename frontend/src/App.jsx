@@ -5,8 +5,9 @@ import Home from './components/Home';
 import AdminRegister from './components/Adminregister';
 import StudentSignIn from './components/Studentsignin';
 import TeacherSignIn from './components/Teachersignin';
-import Announcement from './pages/Admin/Announcement';
-import Assignment from './pages/Admin/Assignment';
+import AdminDashboard from './pages/Admin/Dashboard';
+import TeacherDashboard from './pages/Teachers/Dashboard';
+import StudentDashboard from './pages/Students/Dashboard';
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
           <Route path="/admin-signIn" element={<AdminRegister />} />
           <Route path="/student-signIn" element={<StudentSignIn />} />
           <Route path="/teacher-signIn" element={<TeacherSignIn />} />
-          <Route path="/"
           
+          <Route exact path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route exact path="/teacher/dashboard" element={<TeacherDashboard />} />        
+          <Route exact path="/student/dashboard" element={<StudentDashboard />} />
+
         </Routes>
       </div>
     </Router>
